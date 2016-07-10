@@ -7,7 +7,7 @@ function BonusState() {
     audio = new jaws.Audio({audio: "assets/jinete.mp3", volume: 0.7});
     viewport = viewport = new jaws.Viewport({max_x: 2800, max_y: 2800});
     tile_map = new jaws.TileMap({cell_size: 35, size: [500, 500]});
-    player = new jaws.Sprite({image: "assets/toro.png", scale: 0.12, x: viewport.max_x / 2, y: viewport.max_y / 2, anchor: "center"});
+    player = new jaws.Sprite({image: "assets/toro.png", scale: 0.14, x: viewport.max_x / 2, y: viewport.max_y / 2, anchor: "center"});
     goal = new jaws.Sprite({image: "assets/tipo1.png", scale: 0.08});
     terra = new jaws.SpriteList();
     enemies = new jaws.SpriteList();
@@ -196,7 +196,7 @@ function PlayState() {
 
     viewport = viewport = new jaws.Viewport({max_x: 2100, max_y: 2100});
     tile_map = new jaws.TileMap({cell_size: 35, size: [500, 500]});
-    player = new jaws.Sprite({image: "assets/toro.png", scale: 0.12, x: viewport.max_x / 2, y: viewport.max_y / 2, anchor: "center"});
+    player = new jaws.Sprite({image: "assets/toro.png", scale: 0.14, x: viewport.max_x / 2, y: viewport.max_y / 2, anchor: "center"});
     goal = new jaws.Sprite({image: "assets/tipo1.png", scale: 0.08});
     terra = new jaws.SpriteList();
     enemies = new jaws.SpriteList();
@@ -394,8 +394,8 @@ function EndState() {
 function FirstState() {
     this.setup = function(){
         msg_lament = new jaws.Text({text: "La historia es la de siempre.", x: 130, y: 100, fontSize: 20});
-        msg = new jaws.Text({text: "Estas en tordesillas. Mal lugar para ser toro.", x: 70, y: 130, fontSize: 20});
-        msg1 = new jaws.Text({text: "Estas rodeado de gente.", x: 150, y: 160, fontSize: 20});
+        msg = new jaws.Text({text: "Estás en tordesillas. Mal lugar para ser toro.", x: 70, y: 130, fontSize: 20});
+        msg1 = new jaws.Text({text: "Estás rodeado de gente.", x: 150, y: 160, fontSize: 20});
         msg2 = new jaws.Text({text: "Mátalos a todos antes de que algún desaprensivo te dispare.", x: 20, y: 190, fontSize: 20});
         msg3 = new jaws.Text({text: "Eres grande! Eres libre!", x: 150, y: 220, fontSize: 20});
         msg4 = new jaws.Text({text: "Muévete con las flechas.", x: 150, y: 295, fontSize: 20});
